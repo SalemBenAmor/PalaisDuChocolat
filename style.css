@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+:root {
+    --couleur-fond-site: #F5F5F5;
+    --couleur-bouton: #583101;
+    --couleur-bouton-hover: #6F4518;
+    --couleur-card: #F5F5F5;
+    --couleur-texte-card: #583101;
+    --couleur-texte-body: rgb(40, 2, 2);
+    --font-size-h1: 3em;
+    --font-size-h2: 2.5em;
+    --font-size-h3: 1.5em;
+    --font-size-h4: 1.2em;
+    --font-size-h5: 1.3em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--couleur-fond-site);
+    font-family: "Poetsen One", sans-serif;
+    color: var(--couleur-texte-body);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+}
+
+h5 {
+    font-size: var(--font-size-h5);
+}
+
+/* <---------- HEADER ----------> */
+
+header {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+#slogan {
+    font-size: var(--font-size-h3);
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#btnDevis {
+    width: 15%;
+    padding: 1rem;
+    border: none;
+    border-radius: 20px;
+    font-family: "Poetsen One", sans-serif;
+    font-size: var(--font-size-h4);
+    color: var(--couleur-fond-site);
+    background-color: var(--couleur-bouton);
+    transition: background-color 0.3s;
+}
+
+#btnDevis:hover {
+    background-color: var(--couleur-bouton-hover);
+}
+
+
+/* <---------- MAIN ----------> */
+
+/* <---------- SECTION TEMOIN ----------> */
+
+#temoignages {
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    color: var(--couleur-texte-card);
+    background-color: var(--couleur-card);
+}
+
+#temoignages h2 {
+    margin-bottom: 1rem;
+    line-height: 1;
+    color: var(--couleur-texte-body);
+}
+
+.engagement {
+    font-size: var(--font-size-h4);
+    padding: 0.2em 0;
+}
+
+
+/* <---------- SECTION CHOCOLAT ----------> */
+
+#chocolat {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+#chocolat h2 {
+    margin-bottom: 2rem;
+}
+
+#produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.card {
+    text-align: center;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--couleur-texte-card);
+    background-color: var(--couleur-card);
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+    transition: scale 0.3s;
+}
+
+.card:hover {
+    scale: 1.02;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card h3 {
+    padding: 0 1rem;
+}
+
+.card p {
+    padding: 0 1rem 1rem 1rem;
+}
+
+
+/* <---------- SECTION CLIENT ----------> */
+
+#client {
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+}
+
+#client h2 {
+    margin-bottom: 2rem;
+}
+
+#commentaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.comments {
+    color: var(--couleur-texte-card);
+    background-color: var(--couleur-card);
+    width: 70%;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+/* <---------- MAP ----------> */
+
+#localisation {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+#localisation h2 {
+    margin-bottom: 2rem;
+}
+
+#map { 
+    height: 50vh; 
+}
